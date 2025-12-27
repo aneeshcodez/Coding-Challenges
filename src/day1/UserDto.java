@@ -1,5 +1,7 @@
 package day1;
 
+import java.util.List;
+
 public class UserDto {
     int id;
     String name;
@@ -27,4 +29,10 @@ public class UserDto {
         userDto.setName(user.getName());
         return userDto;
     }
+
 }
+
+// Take each object from users List and convert it to Userdto obj using for loop
+//
+//
+//
