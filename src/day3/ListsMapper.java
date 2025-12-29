@@ -22,5 +22,4 @@ public class ListsMapper {
         userDto.setName(user.getName());
         return userDto;
     }
-    }
-
+}

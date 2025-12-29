@@ -1,4 +1,4 @@
-package day3;
+package day4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +23,7 @@ public class Main {
         users.add(user);
         users.add(user1);
 
+
         ListsMapper listsMapper = new ListsMapper();
         List<UserDto> resultList = listsMapper.toDtoList(users);
 
@@ -30,8 +31,10 @@ public class Main {
         for(UserDto userDto1 : resultList){
             System.out.println(userDto1.getId());
             System.out.println(userDto1.getName());
+            System.out.println(userDto1.isHasEmail());
+
+
         }
 
     }
 }
-
