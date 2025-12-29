@@ -16,7 +16,10 @@ public class ListsMapper {
             userDto.setName(eachUser.getName());
             finalList.add(userDto);
         }
+
         return finalList;
 
     }
 }
+
+// Rewrite the Day 2 logic using Java Streams.
