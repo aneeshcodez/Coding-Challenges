@@ -33,6 +33,3 @@ public class UserDto {
 }
 
 // Take each object from users List and convert it to Userdto obj using for loop
-//
-//
-//

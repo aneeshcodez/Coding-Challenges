@@ -14,7 +14,6 @@ public class Main {
         //Obj 2
         User user1 = new User();
         user1.setName("Sam");
-        user1.setEmail("Sam@gmail.com");
         user1.setPassword("pwd2");
         user1.setId(6);
 
@@ -32,7 +31,6 @@ public class Main {
             System.out.println(userDto1.getId());
             System.out.println(userDto1.getName());
             System.out.println(userDto1.isHasEmail());
-
 
         }
 

@@ -16,10 +16,10 @@ public class Main {
         user.setId(4);
         return user;
     }
-    public static void printDTO(UserDto userDto1){
-        System.out.println(userDto1.getId());
-        System.out.println(userDto1.getName());
-        System.out.println(userDto1.isHasEmail());
+    public static void printDTO(UserDto userDto){
+        System.out.println(userDto.getId());
+        System.out.println(userDto.getName());
+        System.out.println(userDto.isHasEmail());
 
     }
 }
