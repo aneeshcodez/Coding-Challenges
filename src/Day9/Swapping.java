@@ -1,7 +1,9 @@
-package Day10;
+package Day9;
+
+import java.util.Scanner;
 
 public class Swapping {
-     int a  ;
+    int a  ;
      int b ;
 
     // Constructor to intialize variables
@@ -19,7 +21,9 @@ public class Swapping {
     }
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         Swapping obj1 = new Swapping(5,10);
+
 
         obj1.swap();
 
