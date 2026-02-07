@@ -13,7 +13,5 @@ public class Streams_1 {
     }
 }
 
-//copy this in Notion Notes :
-// filter takes a predicate in a lambda
-// Also copy notes for Predicate from 'Understanding Predicate from Java' from Chrome GPT
+
 
