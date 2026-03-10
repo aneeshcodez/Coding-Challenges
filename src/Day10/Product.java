@@ -1,6 +1,7 @@
 package Day10;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Product {
     Long id;
@@ -9,6 +10,10 @@ public class Product {
     double price;
 
     public Product(long l, String laptop, String electronics, int i) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.price = price;
     }
 
     public Long getId() {
@@ -51,4 +56,10 @@ public class Product {
             new Product(5L, "T-Shirt", "Fashion", 800),
             new Product(6L, "Rice Bag", "Grocery", 1200)
     );
+
+    List<ProductDto> productDtoList = products.stream()
+            .filter(product -> product.getPrice() > 1000)
+            .map((product,productDto) -> productDto.setName(product.getName()))
+            .map(product,productDto) -> productDto.setPrice(product.getPrice()))
+            .collect(Collectors.toUnmodifiableList());
 }
