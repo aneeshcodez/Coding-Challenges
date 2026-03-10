@@ -9,7 +9,7 @@ public class Product {
     String category;
     double price;
 
-    public Product(long l, String laptop, String electronics, int i) {
+    public Product(Long id, String name, String category, double price) {
         this.id = id;
         this.name = name;
         this.category = category;
@@ -48,18 +48,22 @@ public class Product {
         this.price = price;
     }
 
-    List<Product> products = List.of(
-            new Product(1L, "iPhone", "Electronics", 90000),
-            new Product(2L, "Laptop", "Electronics", 70000),
-            new Product(3L, "Keyboard", "Electronics", 1500),
-            new Product(4L, "Shoes", "Fashion", 3000),
-            new Product(5L, "T-Shirt", "Fashion", 800),
-            new Product(6L, "Rice Bag", "Grocery", 1200)
-    );
+    public static void main(String[] args) {
+        List<Product> products = List.of(
+                new Product(1L, "iPhone", "Electronics", 90000),
+                new Product(2L, "Laptop", "Electronics", 70000),
+                new Product(3L, "Keyboard", "Electronics", 1500),
+                new Product(4L, "Shoes", "Fashion", 3000),
+                new Product(5L, "T-Shirt", "Fashion", 800),
+                new Product(6L, "Rice Bag", "Grocery", 1200)
+        );
 
-    List<ProductDto> productDtoList = products.stream()
-            .filter(product -> product.getPrice() > 1000)
-            .map((product,productDto) -> productDto.setName(product.getName()))
-            .map(product,productDto) -> productDto.setPrice(product.getPrice()))
-            .collect(Collectors.toUnmodifiableList());
+        List<ProductDto> resultDtoList = ListMapper.toDto(products);
+        System.out.println(resultDtoList);
+        for(ProductDto productDto : resultDtoList){
+            System.out.println(productDto.getName());
+            System.out.print(productDto.getPrice());
+        }
+
+    }
 }
