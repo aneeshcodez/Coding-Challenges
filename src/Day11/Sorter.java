@@ -18,6 +18,10 @@ public class Sorter {
         List<Product> priceSortedList = products.stream().sorted(Comparator.comparing(Product :: getPrice)).toList();
         return priceSortedList;
     }
+
+    public static List<Product> groupCat(List<Product> products){
+        List<Product> someList = products.stream().collect(Collectors.groupingBy(Product::getCategory));
+    }
 }
 
 
