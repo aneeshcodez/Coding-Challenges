@@ -2,7 +2,7 @@ package Day11;
 
 public class ProductDto {
     String name;
-    double price;
+    int price;
 
     public String getName() {
         return name;
@@ -12,15 +12,15 @@ public class ProductDto {
         this.name = name;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public ProductDto(String name , double price){
+    public ProductDto(String name , int price){
         this.name = name;
         this.price = price;
     }

@@ -18,5 +18,10 @@ public class Main {
             System.out.println(name);
         }
 
+        List<Product> products1 = Sorter.sortByPrice(products);
+        for(Product p : products1){
+            System.out.println(p.getPrice());
+        }
+
     }
 }

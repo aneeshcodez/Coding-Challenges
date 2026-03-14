@@ -1,15 +1,13 @@
 package Day11;
 
-import java.util.List;
-
 public class Product {
 
     Long id;
     String name;
     String category;
-    double price;
+    int price;
 
-    public Product(Long id, String name, String category, double price) {
+    public Product(Long id, String name, String category, int price) {
         this.id = id;
         this.name = name;
         this.category = category;
@@ -40,11 +38,11 @@ public class Product {
         this.category = category;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
